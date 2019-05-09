@@ -5,4 +5,4 @@
 
 Se realizó la detección de las señales amarillas en la pista con ayuda de la **librería OpenCV**. Para poder utilizar el vídeo de referencia pueden descargarlo en siguiente link:
 
-https://drive.google.com/file/d/1F1LwybUWiwalwFSi-PPEFZ6BD2o5qc1n/view?usp=sharing
+https://drive.google.com/drive/folders/1iDhw6sKUEtUWG2p8MucYe3pFeS14SCi3?usp=sharing
