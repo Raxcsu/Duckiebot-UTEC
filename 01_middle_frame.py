@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-lvideo = "images/pista1.mp4"
+lvideo = "images/film5.avi"
 video = cv2.VideoCapture(lvideo)
 
 distResolution = 1
