@@ -3,7 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 vd = cv2.VideoCapture("images/film5.avi")
-im = cv2.imread("images/test_image.jpg")
+fname = "images/testa37.png"
+img = cv2.imread(fname)
 
 
 def toCanny(src):
@@ -14,7 +15,7 @@ def toCanny(src):
 
 
 def selectArea(src):
-    polygon = np.array([[(5, 480), (270, 156), (410, 164), (640, 340), (640, 480)]])
+    polygon = np.array([[(0, 480), (270, 164), (420, 164), (640, 340)]])
     mask = np.zeros_like(src)
     cv2.fillPoly(mask, polygon, 255)
     mask_img = cv2.bitwise_and(src, mask)
@@ -59,12 +60,12 @@ while (vd.isOpened()):
     union_img = cv2.addWeighted(l_im, 0.8, line_image, 1, 1)
 
     # Display the resulting frame
-#    plt.imshow(frame)
-#    if plt.show(1) & 0xFF == ord('q'):
-#        break
+    plt.imshow(img)
+    if plt.show(1) & 0xFF == ord('q'):
+        break
 
-    cv2.imshow("wd", union_img)
-    cv2.imshow("wd2", frame)
+    #cv2.imshow("wd", union_img)
+    #cv2.imshow("wd2", frame)
     key = cv2.waitKey(10)
     if key == 5:
         break
